@@ -19,7 +19,7 @@ function Verify() {
     }
 
     if (localStorage.getItem(user) != pass) {
-        alert("Now who are we trying to fool here...");
+        alert("Now who are we trying to fool here...You need the right password to get inside");
         return false;
     }
 
