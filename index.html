@@ -1,0 +1,43 @@
+<!DOCTYPE>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Authentication Page</title>
+    <link rel="stylesheet" href="app.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Fresca&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <p> the username is sunilvm and passsword is nothingness </p>
+    </header>
+    <section class="CheckBox">
+        <h1>Authenticate yourself below</h1>
+        <form action="#" method="post" name="authentication" id="authentication" class="authentication">
+            <label for="username">Enter your username :</label>
+            <br>
+            <input type="text" name="username" id="username" minlength="3" maxlenth="15" pattern="[a-zA-Z0-9]+"
+                required>
+            <br>
+            <label for="password">Enter your password :</label>
+            <br>
+            <input type="password" name="password" id="password" minlength="8" maxlength="15" pattern="[a-zA-Z0-9]+"
+                required>
+            <br>
+            <input id="sub" type="submit" value="Submit" onclick="Verify();"></input>
+            <button id="rule" type="button" onclick="Show('rules');">Rules</button>
+        </form>
+        <div id="rules">
+            <ul>
+                <li>Username must have between 3 and 15 caracters</li>
+                <li>Password must have between 8 and 15 caracters</li>
+                <li>Username and Password required</li>
+                <li>Use only numbers and letters</li>
+            </ul>
+        </div>
+    </section>
+</body>
+<script src="app.js"></script>
+
+</html>
