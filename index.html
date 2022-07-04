@@ -18,12 +18,12 @@
             onsubmit="return Verify();">
             <label for="username">Enter your username :</label>
             <br>
-            <input type="text" name="username" id="username" minlength="3" maxlenth="15" pattern="[a-zA-Z0-9]+"
+            <input type="text" name="username" id="username" minlength="3" maxlenth="10" pattern="[a-zA-Z0-9]+"
                 required>
             <br>
             <label for="password">Enter your password :</label>
             <br>
-            <input type="password" name="password" id="password" minlength="8" maxlength="15" pattern="[a-zA-Z0-9]+"
+            <input type="password" name="password" id="password" minlength="8" maxlength="10" pattern="[a-zA-Z0-9]+"
                 required>
             <br>
             <input id="sub" type="submit" value="Submit"></input>
@@ -31,8 +31,8 @@
         </form>
         <div id="rules">
             <ul>
-                <li>Username must have between 3 and 15 caracters</li>
-                <li>Password must have between 8 and 15 caracters</li>
+                <li>Username must have between 3 and 10 characters</li>
+                <li>Password must have between 8 and 10 characters</li>
                 <li>Username and Password required</li>
                 <li>Use only numbers and letters</li>
             </ul>
