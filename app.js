@@ -32,9 +32,12 @@ function addUser() {
     var user = document.getElementById("username").value;
     var pass = document.getElementById("password").value;
 
-    localStorage.setItem("username", user);
-    localStorage.setItem("password", pass);
+    if (localStorage.getItem(user) === null) {
+        localStorage.setItem(user, pass);
+        alert("You've signed up");
+    }
 
-    alert("You've signed up");
+    else alert("You have signed up already! Think!");
+
 }
 
