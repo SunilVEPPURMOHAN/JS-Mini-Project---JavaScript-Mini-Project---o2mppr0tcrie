@@ -2,7 +2,8 @@
 
 WHY?
 
-1. Authenticating existing users with their username-password combo is a common requirement in most applications. This project will help us to sign up a non-existing user and also authenticate an existing user from localstorage database at a very basic level.
+1. Authenticating existing users with their username-password combo is a common requirement in most applications.
+2. This project will help us to sign up a non-existing user and also authenticate an existing user from localstorage database at a very basic level.
 
 HOW?
 
