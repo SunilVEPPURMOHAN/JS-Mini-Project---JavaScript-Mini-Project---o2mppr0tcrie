@@ -10,17 +10,29 @@ function Show(id) {
 
 //Submit Button
 function Verify() {
-    var userRef = "sunilvm";
-    var passRef = "nothingness";
-
     var user = document.getElementById("username").value;
     var pass = document.getElementById("password").value;
-    if (user == userRef && pass == passRef) {
-        alert("Connected");
-        return true;
-    } else {
+
+    if (localStorage.getItem(user) === null) {
+        alert("Try signing up first...");
+        return false;
+    }
+
+    if (localStorage.getItem(user) != pass) {
         alert("Now who are we trying to fool here...");
         return false;
     }
+
+    alert("Connected");
+    return true;
+
 };
+
+function addUser() {
+    var user = document.getElementById("username").value;
+    var pass = document.getElementById("password").value;
+
+    localStorage.setItem("username", user);
+    localStorage.setItem("password", pass);
+}
 
