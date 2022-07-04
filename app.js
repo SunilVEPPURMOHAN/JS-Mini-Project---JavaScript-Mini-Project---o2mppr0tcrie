@@ -34,5 +34,7 @@ function addUser() {
 
     localStorage.setItem("username", user);
     localStorage.setItem("password", pass);
+
+    alert("You've signed up");
 }
 
