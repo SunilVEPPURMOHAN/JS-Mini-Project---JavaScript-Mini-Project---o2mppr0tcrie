@@ -15,7 +15,7 @@ function Verify() {
 
     var user = document.getElementById("username").value;
     var pass = document.getElementById("password").value;
-    if (user == userRef || pass == passRef) {
+    if (user == userRef && pass == passRef) {
         alert("Connected")
     } else {
         alert("Now who are we trying to fool here...")
