@@ -1,1 +1,1 @@
-#Simple authentication using HTML, CSS, JS
+# Simple authentication using HTML, CSS, JS
