@@ -16,8 +16,11 @@ function Verify() {
     var user = document.getElementById("username").value;
     var pass = document.getElementById("password").value;
     if (user == userRef && pass == passRef) {
-        alert("Connected")
+        alert("Connected");
+        return true;
     } else {
-        alert("Now who are we trying to fool here...")
+        alert("Now who are we trying to fool here...");
+        return false;
     }
 };
+

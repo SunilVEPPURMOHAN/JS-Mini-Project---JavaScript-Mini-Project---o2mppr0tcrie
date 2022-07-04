@@ -14,7 +14,8 @@
     </header>
     <section class="CheckBox">
         <h1>Authenticate yourself below</h1>
-        <form method="post" name="authentication" id="authentication" class="authentication">
+        <form action="#" method="post" name="authentication" id="authentication" class="authentication"
+            onsubmit="return Verify();">
             <label for="username">Enter your username :</label>
             <br>
             <input type="text" name="username" id="username" minlength="3" maxlenth="15" pattern="[a-zA-Z0-9]+"
@@ -25,7 +26,7 @@
             <input type="password" name="password" id="password" minlength="8" maxlength="15" pattern="[a-zA-Z0-9]+"
                 required>
             <br>
-            <input id="sub" type="submit" value="Submit" onclick="Verify();"></input>
+            <input id="sub" type="submit" value="Submit"></input>
             <button id="rule" type="button" onclick="Show('rules');">Rules</button>
         </form>
         <div id="rules">
