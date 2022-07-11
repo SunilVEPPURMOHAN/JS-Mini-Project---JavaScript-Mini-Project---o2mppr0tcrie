@@ -24,7 +24,7 @@ function Verify() {
     }
 
     alert("You are logged in successfully.");
-    location.href = "google.com"
+    location.href = "signin.html"
     return true;
 
 };
@@ -36,7 +36,7 @@ function addUser() {
     if (localStorage.getItem(user) === null) {
         localStorage.setItem(user, pass);
         alert("You've signed up successfully.");
-        location.href = "google.com";
+        location.href = "signup.html";
     }
 
     else alert("You've signed up already!");
