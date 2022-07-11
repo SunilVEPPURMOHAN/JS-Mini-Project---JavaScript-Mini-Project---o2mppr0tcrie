@@ -43,3 +43,10 @@ button {
     color: red;
     display: none;
 }
+
+.center {
+    text-align: center;
+    flex-wrap: wrap;
+    display: flex;
+
+}
