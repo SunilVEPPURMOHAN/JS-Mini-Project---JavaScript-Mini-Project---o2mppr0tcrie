@@ -48,5 +48,5 @@ button {
     text-align: center;
     flex-wrap: wrap;
     display: flex;
-
+    color: black;
 }

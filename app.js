@@ -24,7 +24,7 @@ function Verify() {
     }
 
     alert("You are logged in successfully.");
-    location.href = "signin.html"
+    window.location = "signin.html"
     return true;
 
 };
