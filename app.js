@@ -14,16 +14,16 @@ function Verify() {
     var pass = document.getElementById("password").value;
 
     if (localStorage.getItem(user) === null) {
-        alert("Try signing up first...");
+        alert("You aren't signed up yet. Please sign up for login priveleges.");
         return false;
     }
 
     if (localStorage.getItem(user) != pass) {
-        alert("Now who are we trying to fool here...You need the right password to get inside");
+        alert("Incorrect password. Please key in the right password.");
         return false;
     }
 
-    alert("Connected");
+    alert("You are logged in successfully.");
     return true;
 
 };
@@ -34,10 +34,10 @@ function addUser() {
 
     if (localStorage.getItem(user) === null) {
         localStorage.setItem(user, pass);
-        alert("You've signed up");
+        alert("You've signed up successfully.");
     }
 
-    else alert("You have signed up already! Think!");
+    else alert("You have signed up already!");
 
 }
 
