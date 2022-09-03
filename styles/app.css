@@ -3,6 +3,8 @@ body {
     color: #800000;
     font-family: Arial, "sans serif";
     background-image: url("https://upload.wikimedia.org/wikipedia/commons/a/a8/Taleb_and_Holy_Grail_Distributions.png");
+    background-repeat: no-repeat;
+    background-position: top left;
 }
 
 h1 {
