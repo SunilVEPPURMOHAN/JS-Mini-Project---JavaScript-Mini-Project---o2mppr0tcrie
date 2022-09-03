@@ -11,7 +11,8 @@ var possibleWords = [
   "LONG TAIL",
   "VIA NEGATIVA",
   "BARBELL",
-  "GREEN LUMBER"
+  "GREEN LUMBER",
+  "FAT TAIL"
 ];
 
 
